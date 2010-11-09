@@ -1,0 +1,133 @@
+<stylecopresultscache>
+  <version>10</version>
+  <project key="416585931">
+    <configuration>
+    </configuration>
+  </project>
+  <sourcecode name="ADLogin.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>130</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ChangePersonalInfo.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>153</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ManageNews.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>143</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PersonalInfo.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>160</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Advice.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>188</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ManageAssistants.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>137</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="WorkInfo.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>167</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssistantsInfo.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>195</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ASSLogin.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>98</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="News.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>201</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Recruit.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>111</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Exam.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>105</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Site.master.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>117</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="home.aspx.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>11/08/2010 14:08:51</timestamp>
+      <milliseconds>460</milliseconds>
+    </settings>
+    <timestamp>10/28/2010 18:57:42</timestamp>
+    <milliseconds>207</milliseconds>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>
