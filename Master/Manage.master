@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Manage.master.cs" Inherits="admin_admin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../Styles/login.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    body{ background: url(../Resource/bg.png)  repeat-x   scroll top;}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+    <h1>图书馆助理管理系统</h1>
+        <div id="header"> 
+            <div>欢迎 <strong>admin</strong> (admin)  | <a href="../">返回首页</a> | <a href="../Logout.aspx">退出</a> </div>
+            <h2><a href="../Default.aspx" style="color:#000;font-family: 'Microsoft Yahei';  font-size:24px;  ">管理中心</a></h2>
+        </div>
+        <div id="container"> 
+            <div id="sidebar">
+                <h4>内容管理</h4>
+                <ul>
+                    <li><a href="../administor/NewsEdit.aspx">添加新闻</a></li>
+                    <li><a href="../administor/NewsManage.aspx">新闻管理</a></li>
+                    <li><a href="../administor/UserManage.aspx">助理管理</a></li>
+                    <li><a href="../administor/WorkArrange.aspx">助理排班</a></li>
+                </ul>
+            </div>
+            
+            <div id="content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                <div style="clear:both;"></div>
+            </div>
+            
+        </div>
+        
+        <div id="footer">Powered by <a href="mailto:xxj050@163.com" target="_blank">Friends</a></div>
+    </div>
+    </form>
+</body>
+</html>

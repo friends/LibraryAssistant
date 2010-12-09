@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="../Styles/login.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    body{ background: url(../Resource/bg.png)  repeat-x   scroll top;}
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        
+        <div id="header"> 
+        <h1>图书馆助理管理系统</h1>
+            <div>欢迎 <strong>admin</strong>| <a href="./">主页</a> | <a href="../assistant/Apply.aspx">申请</a> | <a href="../Logout.aspx">退出</a> </div>
+        </div>
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
+            Font-Size="0.8em" PathSeparator=" : ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+            </asp:SiteMapPath>
+        <div id="container"> 
+            
+        <asp:ContentPlaceHolder ID= "content" runat="server">            
+            </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer">Powered by <a href="mailto:xxj050@163.com" target="_blank">Friends</a></div>
+    </div>
+    </form>
+</body>
+</html>
