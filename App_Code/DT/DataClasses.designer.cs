@@ -33,10 +33,19 @@ namespace DT
     partial void InsertNews(News instance);
     partial void UpdateNews(News instance);
     partial void DeleteNews(News instance);
+<<<<<<< HEAD
     #endregion
 		
 		public DataClassesDataContext() : 
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["LASDBConnectionString"].ConnectionString, mappingSource)
+=======
+    partial void InsertDuty(Duty instance);
+    partial void UpdateDuty(Duty instance);
+    partial void DeleteDuty(Duty instance);
+    #endregion
+		
+		public DataClassesDataContext() : 
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["LASDBConnectionString1"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -55,10 +64,32 @@ namespace DT
 		
 		public DataClassesDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
 		{
 			OnCreated();
 		}
 		
+<<<<<<< HEAD
+		public DataClassesDataContext(string connection) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public DataClassesDataContext(System.Data.IDbConnection connection) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+		public DataClassesDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+				base(connection, mappingSource)
+		{
+			OnCreated();
+		}
+		
+=======
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
 		public DataClassesDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
@@ -71,6 +102,17 @@ namespace DT
 			{
 				return this.GetTable<News>();
 			}
+<<<<<<< HEAD
+=======
+		}
+		
+		public System.Data.Linq.Table<Duty> Duty
+		{
+			get
+			{
+				return this.GetTable<Duty>();
+			}
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
 		}
 	}
 	
@@ -115,6 +157,20 @@ namespace DT
 		public int newsId
 		{
 			get
+<<<<<<< HEAD
+			{
+				return this._newsId;
+			}
+			set
+			{
+				if ((this._newsId != value))
+				{
+					this.OnnewsIdChanging(value);
+					this.SendPropertyChanging();
+					this._newsId = value;
+					this.SendPropertyChanged("newsId");
+					this.OnnewsIdChanged();
+=======
 			{
 				return this._newsId;
 			}
@@ -151,6 +207,87 @@ namespace DT
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_title", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string title
+		{
+			get
+			{
+				return this._title;
+			}
+			set
+			{
+				if ((this._title != value))
+				{
+					this.OntitleChanging(value);
+					this.SendPropertyChanging();
+					this._title = value;
+					this.SendPropertyChanged("title");
+					this.OntitleChanged();
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
+				}
+			}
+		}
+		
+<<<<<<< HEAD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_content", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		public string content
+		{
+			get
+			{
+				return this._content;
+			}
+			set
+			{
+				if ((this._content != value))
+				{
+					this.OncontentChanging(value);
+					this.SendPropertyChanging();
+					this._content = value;
+					this.SendPropertyChanged("content");
+					this.OncontentChanged();
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publishTime", DbType="DateTime NOT NULL")]
+		public System.DateTime publishTime
+		{
+			get
+			{
+				return this._publishTime;
+			}
+			set
+			{
+				if ((this._publishTime != value))
+				{
+					this.OnpublishTimeChanging(value);
+					this.SendPropertyChanging();
+					this._publishTime = value;
+					this.SendPropertyChanged("publishTime");
+					this.OnpublishTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_type", DbType="Int NOT NULL")]
+		public int type
+		{
+			get
+			{
+				return this._type;
+			}
+			set
+			{
+				if ((this._type != value))
+				{
+					this.OntypeChanging(value);
+					this.SendPropertyChanging();
+					this._type = value;
+					this.SendPropertyChanged("type");
+					this.OntypeChanged();
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
+				}
+			}
+		}
+		
+<<<<<<< HEAD
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_title", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
 		public string title
 		{
@@ -207,6 +344,130 @@ namespace DT
 					this._type = value;
 					this.SendPropertyChanged("type");
 					this.OntypeChanged();
+=======
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Duty")]
+	public partial class Duty : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _assistantID;
+		
+		private int _day;
+		
+		private int _time;
+		
+    #region 可扩展性方法定义
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnassistantIDChanging(string value);
+    partial void OnassistantIDChanged();
+    partial void OndayChanging(int value);
+    partial void OndayChanged();
+    partial void OntimeChanging(int value);
+    partial void OntimeChanged();
+    #endregion
+		
+		public Duty()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_assistantID", DbType="VarChar(16) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string assistantID
+		{
+			get
+			{
+				return this._assistantID;
+			}
+			set
+			{
+				if ((this._assistantID != value))
+				{
+					this.OnassistantIDChanging(value);
+					this.SendPropertyChanging();
+					this._assistantID = value;
+					this.SendPropertyChanged("assistantID");
+					this.OnassistantIDChanged();
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
+				}
+			}
+		}
+		
+<<<<<<< HEAD
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+=======
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_day", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int day
+		{
+			get
+			{
+				return this._day;
+			}
+			set
+			{
+				if ((this._day != value))
+				{
+					this.OndayChanging(value);
+					this.SendPropertyChanging();
+					this._day = value;
+					this.SendPropertyChanged("day");
+					this.OndayChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_time", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int time
+		{
+			get
+			{
+				return this._time;
+			}
+			set
+			{
+				if ((this._time != value))
+				{
+					this.OntimeChanging(value);
+					this.SendPropertyChanging();
+					this._time = value;
+					this.SendPropertyChanged("time");
+					this.OntimeChanged();
 				}
 			}
 		}
@@ -225,6 +486,7 @@ namespace DT
 		
 		protected virtual void SendPropertyChanged(String propertyName)
 		{
+>>>>>>> 6cd395480601239aa131a42df5661534f75a8deb
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
