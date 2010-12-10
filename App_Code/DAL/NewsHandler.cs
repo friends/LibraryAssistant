@@ -2,101 +2,94 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using DT;
+using LAS.Exceptions;
 
-/// <summary>
-///
-/// </summary>
-public class NewsHandler : IHandler
+namespace LAS.DAL
 {
-    private DataClassesDataContext db;
-
-    public News currentNews { get;set; }
-
-    public NewsHandler(News News)
-    {
-        db = new DataClassesDataContext();
-        currentNews = News;
-    }
-    public NewsHandler()
-    {
-        db = new DataClassesDataContext();
-        currentNews = null;
-    }
-
-    //接口IHandler的实现
-    public ErrorMessage Insert(object o)
-    {
-        News n = (News)o;
-        if (n == null)
-            return ErrorMessage.ERROR;
-        else if (SetCurrentNewsById(n.newsId) == ErrorMessage.NOT_EXIST)
-        {
-            db.News.InsertOnSubmit(n);
-            Submit();
-            SetCurrentNewsById(n.newsId);
-            return ErrorMessage.OK;
-        }
-        else
-            return ErrorMessage.ALREADY_EXIST;
-    }
-
-    public ErrorMessage Insert()
-    {
-        if (currentNews == null)
-        {
-            return ErrorMessage.ERROR;
-        }
-        else
-        {
-            db.News.InsertOnSubmit(currentNews);
-            Submit();
-            return ErrorMessage.OK;
-        }
-    }
-    public ErrorMessage Delete()
-    {
-        if (currentNews == null)
-        {
-            return ErrorMessage.ERROR;
-        }
-        else
-        {
-            db.News.DeleteOnSubmit(currentNews);
-            Submit();
-            currentNews = null;
-            return ErrorMessage.OK;
-        }
-    }
-    public ErrorMessage Submit()
-    {
-        db.SubmitChanges();
-        return ErrorMessage.OK;
-    }
-    //self
-
     /// <summary>
-    ///根据NewsId找到对应存在于表中的News,存在则将其赋值给currentNews,若不存在返回ErrorMessage.NOT_EXIST,currentNews置为null
+    /// 操作news对象的handler
     /// </summary>
-    public ErrorMessage SetCurrentNewsById(int nid)
+    public class NewsHandler : IHandler
     {
-        var queryNews = from news in db.News
-                            where news.newsId== nid
-                            select news;
-        if (!queryNews.Any())
+        /// <summary>
+        /// 由linq生成的数据库上下文类
+        /// </summary>
+        private static DataClassesDataContext dataClassesDataContext;
+
+        /// <summary>
+        /// 当前handler对应的news对象
+        /// </summary>
+        private News currentNews;
+
+        /// <summary>
+        /// 基于一个News对象的构造函数
+        /// </summary>
+        /// <param name="news">当前关联的News</param>
+        public NewsHandler(News news)
         {
-            currentNews = null;
-            return ErrorMessage.NOT_EXIST;
-        }
-        else
-        {
-            currentNews = queryNews.First();
-            return ErrorMessage.OK;
+            dataClassesDataContext = new DataClassesDataContext();
+            currentNews = news;
         }
 
-    }
+        /// <summary>
+        /// 将当前关联的News对象插入到数据库中
+        /// </summary>
+        public void Insert()
+        {
+            try
+            {
+                dataClassesDataContext.News.InsertOnSubmit(currentNews);
+                Submit();
+            }
+            catch (Exception)
+            {
+                throw new InsertException();
+            }
+        }
 
-    public List<News> getNewsList()
-    {
-        return db.News.ToList();
+        /// <summary>
+        /// 将当前关联的News对象从数据库中删除
+        /// </summary>
+        public void Delete()
+        {
+            try
+            {
+                dataClassesDataContext.News.DeleteOnSubmit(currentNews);
+                Submit();
+                currentNews = null;
+            }
+            catch (Exception)
+            {
+                throw new DeleteException();
+            }
+        }
+
+        /// <summary>
+        /// 提交操作到数据库
+        /// </summary>
+        public void Submit()
+        {
+            dataClassesDataContext.SubmitChanges();
+        }
+
+        /// <summary>
+        /// 获取所有的News表项
+        /// </summary>
+        /// <returns>News列表</returns>
+        public static List<News> getNewsList()
+        {
+            return dataClassesDataContext.News.ToList();
+        }
+
+        /// <summary>
+        /// 根据id获取一个News对象
+        /// </summary>
+        /// <param name="newsId">News的id</param>
+        /// <returns>获取到的News对象</returns>
+        public static News getNewsById(int newsId)
+        {
+            return dataClassesDataContext.News.First(news => news.newsId == newsId);
+        }
     }
 }

@@ -12,6 +12,8 @@ using System.Web.UI.WebControls.WebParts;
 using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
+using DT;
+using LAS.DAL;
 
 public partial class admin_postedit : Page
 {
