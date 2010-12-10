@@ -30,9 +30,6 @@ namespace DT
 		
     #region 可扩展性方法定义
     partial void OnCreated();
-    partial void InsertNews(News instance);
-    partial void UpdateNews(News instance);
-    partial void DeleteNews(News instance);
     partial void InsertDuty(Duty instance);
     partial void UpdateDuty(Duty instance);
     partial void DeleteDuty(Duty instance);
@@ -68,177 +65,11 @@ namespace DT
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<News> News
-		{
-			get
-			{
-				return this.GetTable<News>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Duty> Duty
 		{
 			get
 			{
 				return this.GetTable<Duty>();
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.News")]
-	public partial class News : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _newsId;
-		
-		private string _content;
-		
-		private string _title;
-		
-		private System.DateTime _publishTime;
-		
-		private int _type;
-		
-    #region 可扩展性方法定义
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnnewsIdChanging(int value);
-    partial void OnnewsIdChanged();
-    partial void OncontentChanging(string value);
-    partial void OncontentChanged();
-    partial void OntitleChanging(string value);
-    partial void OntitleChanged();
-    partial void OnpublishTimeChanging(System.DateTime value);
-    partial void OnpublishTimeChanged();
-    partial void OntypeChanging(int value);
-    partial void OntypeChanged();
-    #endregion
-		
-		public News()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_newsId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int newsId
-		{
-			get
-			{
-				return this._newsId;
-			}
-			set
-			{
-				if ((this._newsId != value))
-				{
-					this.OnnewsIdChanging(value);
-					this.SendPropertyChanging();
-					this._newsId = value;
-					this.SendPropertyChanged("newsId");
-					this.OnnewsIdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_content", DbType="Text", UpdateCheck=UpdateCheck.Never)]
-		public string content
-		{
-			get
-			{
-				return this._content;
-			}
-			set
-			{
-				if ((this._content != value))
-				{
-					this.OncontentChanging(value);
-					this.SendPropertyChanging();
-					this._content = value;
-					this.SendPropertyChanged("content");
-					this.OncontentChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_title", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string title
-		{
-			get
-			{
-				return this._title;
-			}
-			set
-			{
-				if ((this._title != value))
-				{
-					this.OntitleChanging(value);
-					this.SendPropertyChanging();
-					this._title = value;
-					this.SendPropertyChanged("title");
-					this.OntitleChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publishTime", DbType="DateTime NOT NULL")]
-		public System.DateTime publishTime
-		{
-			get
-			{
-				return this._publishTime;
-			}
-			set
-			{
-				if ((this._publishTime != value))
-				{
-					this.OnpublishTimeChanging(value);
-					this.SendPropertyChanging();
-					this._publishTime = value;
-					this.SendPropertyChanged("publishTime");
-					this.OnpublishTimeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_type", DbType="Int NOT NULL")]
-		public int type
-		{
-			get
-			{
-				return this._type;
-			}
-			set
-			{
-				if ((this._type != value))
-				{
-					this.OntypeChanging(value);
-					this.SendPropertyChanging();
-					this._type = value;
-					this.SendPropertyChanged("type");
-					this.OntypeChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

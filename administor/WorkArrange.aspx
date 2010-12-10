@@ -24,13 +24,25 @@
                     </asp:DropDownList>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("day") %>'></asp:Label>
+                    <asp:Label ID="Label1" runat="server" 
+                        Text='<%# decorate(((int)Eval("day"))) %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="time">
                 <EditItemTemplate>
                     <asp:DropDownList ID="DropDownList2" runat="server" 
-                        SelectedValue='<%# Bind("time") %>'>
+                        SelectedValue='<%# Bind("time") %>' 
+                        onselectedindexchanged="DropDownList2_SelectedIndexChanged">
+                        <asp:ListItem Value="0"></asp:ListItem>
+                        <asp:ListItem Value="1"></asp:ListItem>
+                        <asp:ListItem Value="2"></asp:ListItem>
+                        <asp:ListItem Value="3"></asp:ListItem>
+                        <asp:ListItem Value="4"></asp:ListItem>
+                        <asp:ListItem Value="5"></asp:ListItem>
+                        <asp:ListItem Value="6"></asp:ListItem>
+                        <asp:ListItem Value="7"></asp:ListItem>
+                        <asp:ListItem Value="8"></asp:ListItem>
+                        <asp:ListItem Value="9"></asp:ListItem>
                     </asp:DropDownList>
                 </EditItemTemplate>
                 <ItemTemplate>
@@ -53,7 +65,7 @@
         DeleteCommand="DELETE FROM [Duty] WHERE [assistantID] = @original_assistantID AND [day] = @original_day AND [time] = @original_time" 
         InsertCommand="INSERT INTO [Duty] ([assistantID], [day], [time]) VALUES (@assistantID, @day, @time)" 
         OldValuesParameterFormatString="original_{0}" 
-        UpdateCommand="UPDATE Duty set day=@day,time=@time">
+        UpdateCommand="UPDATE Duty set day=@day,time=@time WHERE [assistantID] = @original_assistantID">
         <DeleteParameters>
             <asp:Parameter Name="original_assistantID" Type="String" />
             <asp:Parameter Name="original_day" Type="Int32" />

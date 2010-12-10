@@ -42,7 +42,7 @@ public class FillTable
     protected void putInDataArray(Duty d)
     {
         int row = d.time;
-        int col = d.day;
+        int col = d.day-1;
         dataArray[row][col].Add(d.assistantID);
     }
 

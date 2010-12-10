@@ -5,7 +5,6 @@ using System.Web;
 using DT;
 using LAS.Exceptions;
 
-
 namespace LAS.DAL
 {
     /// <summary>

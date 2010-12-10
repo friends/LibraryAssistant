@@ -19,4 +19,23 @@ public partial class administor_WorkArrange : System.Web.UI.Page
     {
 
     }
+    protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    protected string decorate(int i)
+    { 
+        switch (i)
+        {
+            case 1: return "星期一";
+            case 2: return "星期二";
+            case 3: return "星期三";
+            case 4: return "星期四";
+            case 5: return "星期五";
+            case 6: return "星期六";
+            case 7: return "星期天";
+            default: return "-";
+        }
+    }
 }
