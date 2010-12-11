@@ -1,4 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="Apply.aspx.cs" Inherits="assistant_Apply" %>
+﻿<%--//   Apply.aspx version 1.0
+//   =================================
+//   Copyright (C) 2010  yang haichuan
+//   作者： 杨海川 
+//   Email: yanghaichuan@live.cn
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="Apply.aspx.cs" Inherits="assistant_Apply" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
