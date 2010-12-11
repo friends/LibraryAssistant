@@ -1,4 +1,15 @@
-﻿<%@ Page Language="C#" MasterPageFile="../Master/Manage.master" AutoEventWireup="true" validateRequest="false"  CodeFile="NewsEdit.aspx.cs" Inherits="admin_postedit" Title="无标题页" %>
+﻿<%--
+//   NewsEdit.aspx  version 1.0
+//   =================================
+//   Copyright (C) 2010  Xie Xiaojing
+//   作者： 谢晓境
+//   Email: xxj050@163.com
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+--%>
+<%@ Page Language="C#" MasterPageFile="../Master/Manage.master" AutoEventWireup="true" validateRequest="false"  CodeFile="NewsEdit.aspx.cs" Inherits="admin_postedit" Title="无标题页" %>
 
 <%@ Register Assembly="FredCK.FCKeditorV2" Namespace="FredCK.FCKeditorV2" TagPrefix="FCKeditorV2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">

@@ -1,4 +1,14 @@
-﻿using System;
+﻿//   NewsEdit  version 1.0
+//   =================================
+//   Copyright (C) 2010  Xie Xiaojing
+//   作者： 谢晓境
+//   Email: xxj050@163.com
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
@@ -27,6 +37,7 @@ public partial class admin_postedit : Page
         news.content = content.Value;
         news.title = txtTitle.Text;
         news.type = int.Parse(typeRadioButtonList.SelectedItem.Value);
+        news.publishTime = DateTime.Now;
         NewsHandler newsHandler = new NewsHandler(news);
         newsHandler.Insert();
         Response.Write("<script>alert('添加成功!')</script>");

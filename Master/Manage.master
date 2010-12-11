@@ -1,4 +1,15 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Manage.master.cs" Inherits="admin_admin" %>
+﻿<%--
+//   Manage.master  version 1.0
+//   =================================
+//   Copyright (C) 2010  Xie Xiaojing
+//   作者： 谢晓境
+//   Email: xxj050@163.com
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+--%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Manage.master.cs" Inherits="admin_admin" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">

@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+//   siteMap version 1.0
+//   =================================
+//   Copyright (C) 2010  Xie Xiaojing
+//   作者： 谢晓境
+//   Email: xxj050@163.com
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+-->
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="~/Default.aspx" title="主页"  description="主页">
-        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="~/assistant/Apply.aspx" title="申请"  description="申请" />
+      <siteMapNode url="~/assistant/Personal.aspx" title="个人主页"  description="个人主页" />
+      <siteMapNode url="~/assistant/ShowNews.aspx" title="新闻"  description="新闻" />
     </siteMapNode>
 </siteMap>

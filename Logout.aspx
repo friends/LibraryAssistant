@@ -1,4 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="Logout.aspx.cs" Inherits="Logout" %>
+﻿<%--//   Logout.aspx class version 1.0
+//   =================================
+//   Copyright (C) 2010  Xie Xiaojing
+//   作者： 谢晓境
+//   Email: xxj050@163.com
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="Logout.aspx.cs" Inherits="Logout" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <title>退出</title>
