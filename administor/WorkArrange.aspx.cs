@@ -1,4 +1,13 @@
-﻿using System;
+﻿//   administor_WorkArrange class version 1.0
+//   =================================
+//   Copyright (C) 2010  yang haichuan
+//   作者： 杨海川 
+//   Email: yanghaichuan@live.cn
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,18 +19,6 @@ public partial class administor_WorkArrange : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         
-    }
-    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        
-    }
-    protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
-    {
-
-    }
-    protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
     }
 
     protected string decorate(int i)

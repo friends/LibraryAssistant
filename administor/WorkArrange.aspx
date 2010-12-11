@@ -1,12 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Manage.master" AutoEventWireup="true" CodeFile="WorkArrange.aspx.cs" Inherits="administor_WorkArrange" %>
+﻿<%--//   WorkArrange.aspx class version 1.0
+//   =================================
+//   Copyright (C) 2010  yang haichuan
+//   作者： 杨海川 
+//   Email: yanghaichuan@live.cn
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Manage.master" AutoEventWireup="true" CodeFile="WorkArrange.aspx.cs" Inherits="administor_WorkArrange" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
         AutoGenerateColumns="False" DataKeyNames="assistantID,day,time" 
-        DataSourceID="SqlDataSource1" 
-        onselectedindexchanged="GridView1_SelectedIndexChanged">
+        DataSourceID="SqlDataSource1" >
         <Columns>
             <asp:BoundField DataField="assistantID" HeaderText="assistantID" 
                 ReadOnly="True" SortExpression="assistantID" />
@@ -31,8 +39,7 @@
             <asp:TemplateField HeaderText="time">
                 <EditItemTemplate>
                     <asp:DropDownList ID="DropDownList2" runat="server" 
-                        SelectedValue='<%# Bind("time") %>' 
-                        onselectedindexchanged="DropDownList2_SelectedIndexChanged">
+                        SelectedValue='<%# Bind("time") %>'>
                         <asp:ListItem Value="0"></asp:ListItem>
                         <asp:ListItem Value="1"></asp:ListItem>
                         <asp:ListItem Value="2"></asp:ListItem>
@@ -54,7 +61,6 @@
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSourceday" runat="server" 
         ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 
-        onselecting="SqlDataSource1_Selecting" 
         SelectCommand="select distinct day from Duty"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSourcetime" runat="server" 
         ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 

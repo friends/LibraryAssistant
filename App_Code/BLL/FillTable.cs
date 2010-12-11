@@ -1,4 +1,13 @@
-﻿using System;
+﻿//   FillTable class version 1.0
+//   =================================
+//   Copyright (C) 2010  yang haichuan
+//   作者： 杨海川 
+//   Email: yanghaichuan@live.cn
+//   最后修改时间： 2010 - 12 - 11
+//   检查者: 陈兵
+//   最后检查时间: 2010 - 12 -11
+//   =================================
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,7 +16,7 @@ using System.Web.UI.HtmlControls;
 using DT;
 
 /// <summary>
-///通过一个Duty的list来获取相应的TableUI控件
+///通过一个Duty的list来填充相应的TableUI控件
 /// </summary>
 public class FillTable
 {
