@@ -10,8 +10,13 @@ using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.Configuration;
+using System.Linq;
+using DT;
+using LAS.DAL;
+
 public partial class UI_Login : System.Web.UI.Page
 {
+    private const string personalPage="assistant/Personal.aspx";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -19,6 +24,49 @@ public partial class UI_Login : System.Web.UI.Page
 
     protected void btnLogin_Click(object sender, EventArgs e)
     {
+        if (isIdOrPwdEmpty())
+        {
+            lblMessage.Text = "用户名或密码不能为空！";
+            return;
+        }
+        if(!isPwdCorrect(txtUserName.Text,txtPassword.Text))
+        {
+            lblMessage.Text = "密码或用户名错误";
+            return;
+        }
+        logIn(txtUserName.Text);
+        Response.Redirect(personalPage);
+    }
 
+    protected void logIn(string id)
+    {
+        Session["userId"] = id;
+    }
+
+    protected bool isIdOrPwdEmpty()
+    {
+        if (string.IsNullOrEmpty(txtUserName.Text) || string.IsNullOrEmpty(txtPassword.Text))
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+
+    protected bool isPwdCorrect(string id,string pwd)
+    {
+        DataClassesDataContext db=new DataClassesDataContext();
+        try
+        {
+            Assistants a = db.Assistants.First(ass => ass.ID == id);
+            if (a.password == pwd)
+                return true;
+            else
+                return false;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
     }
 }
