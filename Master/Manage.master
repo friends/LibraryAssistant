@@ -35,6 +35,7 @@
                     <li><a href="../administor/NewsEdit.aspx">添加新闻</a></li>
                     <li><a href="../administor/NewsManage.aspx">新闻管理</a></li>
                     <li><a href="../administor/UserManage.aspx">助理管理</a></li>
+                    <li><a href="../administor/InsertWork.aspx">添加排班</a></li>
                     <li><a href="../administor/WorkArrange.aspx">助理排班</a></li>
                 </ul>
             </div>

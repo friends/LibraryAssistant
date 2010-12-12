@@ -1,4 +1,5 @@
-﻿<%--//   Logout.aspx class version 1.0
+﻿<%--
+//   Logout.aspx class version 1.0
 //   =================================
 //   Copyright (C) 2010  Xie Xiaojing
 //   作者： 谢晓境
@@ -6,7 +7,8 @@
 //   最后修改时间： 2010 - 12 - 11
 //   检查者: 陈兵
 //   最后检查时间: 2010 - 12 -11
-//   =================================--%>
+//   =================================
+--%>
 <%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="Logout.aspx.cs" Inherits="Logout" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
@@ -27,7 +29,7 @@
    <style type="text/css">
    .center
    {
-       width:150px;
+       width:200px;
        margin;0 auto;
    }
    </style>
@@ -35,7 +37,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
     <div class ="center">
     <h2>您已经安全退出！</h2><br />
-    <span><b id="mes" style="color:Red;width:150px; margin:0 auto;">5</b>秒后返回主页！</span>
+    <span><b id="mes" style="color:Red;width:200px; margin:0 auto;">5</b>秒后返回主页！</span>
     </div>
 </asp:Content>
 

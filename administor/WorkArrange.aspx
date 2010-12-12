@@ -4,7 +4,7 @@
 //   作者： 杨海川 
 //   Email: yanghaichuan@live.cn
 //   最后修改时间： 2010 - 12 - 11
-//   检查者: 陈兵
+//   检查者: 谢晓境
 //   最后检查时间: 2010 - 12 -11
 //   =================================--%>
 <%@ Page Title="" Language="C#" MasterPageFile="~/Master/Manage.master" AutoEventWireup="true" CodeFile="WorkArrange.aspx.cs" Inherits="administor_WorkArrange" %>
@@ -12,7 +12,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <a href="InsertWork.aspx">添加排班</a>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
         AutoGenerateColumns="False" DataKeyNames="assistantID,day,time" 
         DataSourceID="SqlDataSource1" PageSize="20" >
