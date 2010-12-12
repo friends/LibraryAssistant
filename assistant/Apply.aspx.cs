@@ -30,6 +30,11 @@ public partial class assistant_Apply : System.Web.UI.Page
             ErrMessage.Text = "用户ID,密码,名字不能为空";
             return;
         }
+        if (TextBoxRePwd.Text != TextBoxPwd.Text)
+        {
+            ErrMessage.Text = "密码不一致";
+            return;
+        }
         if (!register(TextBoxID.Text, TextBoxPwd.Text, TextBoxName.Text))
         {
             ErrMessage.Text = "注册失败！";

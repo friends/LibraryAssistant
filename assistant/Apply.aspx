@@ -30,6 +30,10 @@
             <label for="TextBoxPwd" style="display:block;margin:3px 0;" class="small ">密码:</label>
             <asp:TextBox ID="TextBoxPwd" TextMode="password" runat="server" Width="200"  CssClass="text"></asp:TextBox>
         </p>
+        <p>
+            <label for="TextBoxRePwd" style="display:block;margin:3px 0;" class="small ">密码确认:</label>
+            <asp:TextBox ID="TextBoxRePwd" TextMode="password" runat="server" Width="200"  CssClass="text"></asp:TextBox>
+        </p>
 
         <p>
             <label for="TextBoxName" style="display:block; margin:3px 0;" class="small">姓名:</label>
