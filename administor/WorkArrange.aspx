@@ -12,10 +12,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<a href="InsertWork.aspx">添加排班</a>
+    <a href="InsertWork.aspx">添加排班</a>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
         AutoGenerateColumns="False" DataKeyNames="assistantID,day,time" 
-        DataSourceID="SqlDataSource1" >
+        DataSourceID="SqlDataSource1" PageSize="20" >
         <Columns>
             <asp:BoundField DataField="assistantID" HeaderText="assistantID" 
                 ReadOnly="True" SortExpression="assistantID" />
@@ -59,18 +59,11 @@
             </asp:TemplateField>
             <asp:CommandField ShowEditButton="True" />
             <asp:CommandField ShowDeleteButton="True" />
-            <asp:CommandField ShowInsertButton="True" />
         </Columns>
         <EmptyDataTemplate>
             <asp:Label ID="Label3" runat="server" Text="无排班信息"></asp:Label>
         </EmptyDataTemplate>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSourceday" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 
-        SelectCommand="select distinct day from Duty"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSourcetime" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 
-        SelectCommand="select distinct time from Duty"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 
         SelectCommand="SELECT * FROM [Duty]" 

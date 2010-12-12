@@ -52,7 +52,7 @@ public class FillTable
     {
         int row = d.time;
         int col = d.day-1;
-        dataArray[row][col].Add(d.assistantID);
+        dataArray[row][col].Add(d.Assistants.name);
     }
 
     public void fillDataArrayToTable(Table t)
