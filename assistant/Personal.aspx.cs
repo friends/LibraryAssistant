@@ -18,12 +18,12 @@ using DT;
 
 public partial class assistant_Personal : System.Web.UI.Page
 {
-    private const string loginPage="../Login.aspx";
+    private const string LOGINPAGE="../Login.aspx";
     protected void Page_Load(object sender, EventArgs e)
     {
         string assistantId;
         if (string.IsNullOrEmpty(assistantId=getAssistantId()))
-            Response.Redirect(loginPage);
+            Response.Redirect(LOGINPAGE);
         initDutyTable(assistantId);
     }
 
