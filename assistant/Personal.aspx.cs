@@ -32,7 +32,7 @@ public partial class assistant_Personal : System.Web.UI.Page
         DataClassesDataContext db = new DataClassesDataContext();
         FillTable ft = new FillTable(10, 7);
         ft.creatDataArray(db.Duty.Where(dutys=>dutys.assistantID==id).ToList());
-        ft.fillDataArrayToTable(DutyTable);
+        ft.fillDataArrayToTable(DutyTable,NoValueDisplay.Nothing);
     }
 
     private string getAssistantId()

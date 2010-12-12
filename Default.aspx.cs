@@ -27,6 +27,6 @@ public partial class _Default : System.Web.UI.Page
         DataClassesDataContext db = new DataClassesDataContext();
         FillTable ft = new FillTable(10, 7);
         ft.creatDataArray(db.Duty.ToList());
-        ft.fillDataArrayToTable(DutyTable);
+        ft.fillDataArrayToTable(DutyTable,NoValueDisplay.NoValueString);
     }
 }

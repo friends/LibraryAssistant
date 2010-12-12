@@ -16,6 +16,13 @@ using System.Web.UI.HtmlControls;
 using System.Drawing;
 using DT;
 
+
+
+public enum NoValueDisplay
+{
+    NoValueString,
+    Nothing
+}
 /// <summary>
 ///通过一个Duty的list来填充相应的TableUI控件
 /// </summary>
@@ -40,6 +47,7 @@ public class FillTable
     protected List<string>[][] dataArray;
     protected int rowNum;
     protected int colNum;
+    private NoValueDisplay noValueSign;
 
     public void creatDataArray(List<Duty> dutys)
     {
@@ -56,8 +64,9 @@ public class FillTable
         dataArray[row][col].Add(d.Assistants.name);
     }
 
-    public void fillDataArrayToTable(Table t)
+    public void fillDataArrayToTable(Table t,NoValueDisplay sign)
     {
+        noValueSign = sign;
         for (int row = 0; row < rowNum; row++)
         {
             TableRow r = new TableRow();
@@ -81,11 +90,21 @@ public class FillTable
     protected string getTitle(List<string> strList)
     {
         if (strList.Count == 0)
-            return "没有数据";
+            return getNoValueShow();
         else if (strList.Count > 1)
             return strList.First() + "...";
         else
             return strList.First();
+    }
+
+    private string getNoValueShow()
+    {
+        if (noValueSign == NoValueDisplay.Nothing)
+            return "";
+        else if (noValueSign == NoValueDisplay.NoValueString)
+            return "没有数据";
+        else
+            return "";
     }
     protected string getAll(List<string> strList)
     {
