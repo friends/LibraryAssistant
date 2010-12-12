@@ -34,9 +34,9 @@
     </p>
     <p>
         <label class="label">类型：</label>
-        <asp:RadioButtonList ID="typeRadioButtonList" runat="server" RepeatColumns="3" 
+        <asp:RadioButtonList ID="typeRadioButtonList" runat="server" RepeatColumns="3"  
             RepeatDirection="Horizontal">
-            <asp:ListItem Value="0">通知</asp:ListItem>
+            <asp:ListItem Value="0" Selected="True">通知</asp:ListItem>
             <asp:ListItem Value="1">助理风采</asp:ListItem>
         </asp:RadioButtonList>        
     </p>
