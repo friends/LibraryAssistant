@@ -13,6 +13,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
+using System.Drawing;
 using DT;
 
 /// <summary>
@@ -80,7 +81,7 @@ public class FillTable
     protected string getTitle(List<string> strList)
     {
         if (strList.Count == 0)
-            return "-";
+            return "没有数据";
         else if (strList.Count > 1)
             return strList.First() + "...";
         else
@@ -106,15 +107,34 @@ public class FillTable
     protected TableCell getCell(int row, int col)
     {
         TableCell c = new TableCell();
+        fillCell(row, col, c);
+        return c;
+    }
+
+    private void fillCell(int row, int col, TableCell c)
+    {
         if (dataArray[row][col].Count <= 1)
-            c.Text = getTitle(dataArray[row][col]);
+        {
+            fillCellWithText(row, col, c);
+        }
         else
         {
-            HtmlAnchor a = new HtmlAnchor();
-            a.InnerText = getTitle(dataArray[row][col]);
-            a.Attributes.Add("onclick", "alert('" + getAll(dataArray[row][col]) + "')");
-            c.Controls.Add(a);
+            fillCellWithLink(row, col, c);
         }
-        return c;
+    }
+
+    private void fillCellWithLink(int row, int col, TableCell c)
+    {
+        HtmlAnchor a = new HtmlAnchor();
+        a.InnerText = getTitle(dataArray[row][col]);
+        a.Attributes.Add("onclick", "alert('" + getAll(dataArray[row][col]) + "')");
+        c.Controls.Add(a);
+    }
+
+    private void fillCellWithText(int row, int col, TableCell c)
+    {
+        c.Text = getTitle(dataArray[row][col]);
+        if (c.Text == "没有数据")
+            c.ForeColor = Color.Red;
     }
 }

@@ -74,7 +74,7 @@ public partial class UI_Login : System.Web.UI.Page
             else
                 return false;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return false;
         }

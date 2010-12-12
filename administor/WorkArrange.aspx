@@ -70,7 +70,7 @@
         DeleteCommand="DELETE FROM [Duty] WHERE [assistantID] = @original_assistantID AND [day] = @original_day AND [time] = @original_time" 
         InsertCommand="INSERT INTO [Duty] ([assistantID], [day], [time]) VALUES (@assistantID, @day, @time)" 
         OldValuesParameterFormatString="original_{0}" 
-        UpdateCommand="UPDATE Duty set day=@day,time=@time WHERE [assistantID] = @original_assistantID">
+        UpdateCommand="UPDATE Duty set day=@day,time=@time WHERE [assistantID] = @original_assistantID AND [day] = @original_day AND [time] = @original_time">
         <DeleteParameters>
             <asp:Parameter Name="original_assistantID" Type="String" />
             <asp:Parameter Name="original_day" Type="Int32" />

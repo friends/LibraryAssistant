@@ -46,7 +46,7 @@ public partial class assistant_Apply : System.Web.UI.Page
         {
             ah.Insert();
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return false;
         }

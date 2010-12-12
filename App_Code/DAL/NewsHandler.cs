@@ -25,7 +25,7 @@ namespace LAS.DAL
         /// <summary>
         /// 由linq生成的数据库上下文类
         /// </summary>
-        private static DataClassesDataContext dataClassesDataContext;
+        private static DataClassesDataContext dataClassesDataContext = new DataClassesDataContext();
 
         /// <summary>
         /// 当前handler对应的news对象
@@ -38,7 +38,6 @@ namespace LAS.DAL
         /// <param name="news">当前关联的News</param>
         public NewsHandler(News news)
         {
-            dataClassesDataContext = new DataClassesDataContext();
             currentNews = news;
         }
 

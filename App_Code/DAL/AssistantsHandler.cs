@@ -37,7 +37,7 @@ namespace LAS.DAL
                 db.Assistants.InsertOnSubmit(currentAssistant);
                 Submit();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new InsertException();
             }
@@ -50,7 +50,7 @@ namespace LAS.DAL
                 Submit();
                 currentAssistant = null;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new DeleteException();
             }
