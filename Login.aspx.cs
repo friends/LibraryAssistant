@@ -26,7 +26,8 @@ using LAS.DAL;
 
 public partial class UI_Login : System.Web.UI.Page
 {
-    private const string personalPage="assistant/Personal.aspx";
+    private const string PERSONALPAGE="assistant/Personal.aspx";
+    private const string NEWSEDITPAGE="administor/NewsEdit.aspx";
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -45,7 +46,10 @@ public partial class UI_Login : System.Web.UI.Page
             return;
         }
         logIn(txtUserName.Text);
-        Response.Redirect(personalPage);
+        if (Session["userId"].ToString()=="admin")
+            Response.Redirect(NEWSEDITPAGE);
+        else
+            Response.Redirect(PERSONALPAGE);
     }
 
     protected void logIn(string id)

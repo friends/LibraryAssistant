@@ -63,7 +63,11 @@
     </div>
     <asp:SqlDataSource ID="SqlDataSourceID" runat="server" 
         ConnectionString="<%$ ConnectionStrings:LASDBConnectionString1 %>" 
-        SelectCommand="SELECT [ID] FROM [Assistants]"></asp:SqlDataSource>
+        SelectCommand="SELECT [ID] FROM [Assistants] WHERE ([ID] &lt;&gt; @ID)">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="admin" Name="ID" Type="String" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 
 </asp:Content>
 
