@@ -15,11 +15,17 @@ public partial class main : System.Web.UI.MasterPage
             login.NavigateUrl = "../Logout.aspx";
             apply.Visible = false;
             spliter.Visible = false;
+            user.InnerText = "欢迎" + getLoginUserName() + " | ";
         }
+    }
+
+    private string getLoginUserName()
+    {
+        return (string)Session["userId"];
     }
 
     private bool isLogin()
     {
-        return !string.IsNullOrEmpty((string)Session["userId"]);
+        return !string.IsNullOrEmpty(getLoginUserName());
     }
 }

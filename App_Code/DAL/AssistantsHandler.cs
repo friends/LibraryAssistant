@@ -4,7 +4,7 @@
 //   作者： 杨海川 
 //   Email: yanghaichuan@live.cn
 //   最后修改时间： 2010 - 12 - 11
-//   检查者: 陈兵
+//   检查者: 陈兵 谢晓境
 //   最后检查时间: 2010 - 12 -11
 //   =================================
 using System;
@@ -22,11 +22,10 @@ namespace LAS.DAL
     /// </summary>
     public class AssistantHandler : IHandler
     {
-        private DataClassesDataContext db;
-        public Assistants currentAssistant;
+        private static DataClassesDataContext db = new DataClassesDataContext();
+        private Assistants currentAssistant;
         public AssistantHandler(Assistants a)
         {
-            db = new DataClassesDataContext();
             currentAssistant = a;
         }
         //接口IHandler的实现
@@ -59,6 +58,25 @@ namespace LAS.DAL
         public void Submit()
         {
             db.SubmitChanges();
+        }
+
+        /// <summary>
+        /// 获取所有的Assistant表项
+        /// </summary>
+        /// <returns>Assistant列表</returns>
+        public static List<Assistants> getAssistantsList()
+        {
+            return db.Assistants.ToList();
+        }
+
+        /// <summary>
+        /// 根据id获取一个Assistant对象
+        /// </summary>
+        /// <param name="id">Assistant的id</param>
+        /// <returns>获取到的Assistant对象</returns>
+        public static Assistants getAssistantById(string id)
+        {
+            return db.Assistants.First(assistant => assistant.ID == id);
         }
     }
 }
