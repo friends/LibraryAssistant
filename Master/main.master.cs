@@ -9,6 +9,17 @@ public partial class main : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (isLogin())
+        {
+            login.Text = "退出";
+            login.NavigateUrl = "../Logout.aspx";
+            apply.Visible = false;
+            spliter.Visible = false;
+        }
+    }
 
+    private bool isLogin()
+    {
+        return !string.IsNullOrEmpty((string)Session["userId"]);
     }
 }

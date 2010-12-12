@@ -23,7 +23,7 @@
     <div id="wrapper">       
         <div id="header"> 
         <h1>图书馆助理管理系统</h1>
-            <div>欢迎 <strong>admin</strong>| <asp:HyperLink ID="home" runat="server" Target="_blank" NavigateUrl="~/Default.aspx">主页</asp:HyperLink> | <asp:HyperLink ID="apply" runat="server" Target="_blank" NavigateUrl="~/assistant/Apply.aspx">申请</asp:HyperLink> | <asp:HyperLink  ID = "login" Target="_blank" NavigateUrl="~/Login.aspx" runat="server">登录</asp:HyperLink></div>
+            <div>欢迎 <strong>admin</strong>| <asp:HyperLink ID="home" runat="server" Target="_blank" NavigateUrl="~/Default.aspx">主页</asp:HyperLink> | <asp:HyperLink ID="apply" runat="server" Target="_blank" NavigateUrl="~/assistant/Apply.aspx">申请</asp:HyperLink><label id="spliter" runat="server"> | </label> <asp:HyperLink  ID = "login" Target="_blank" NavigateUrl="~/Login.aspx" runat="server">登录</asp:HyperLink></div>
         </div>
         <div>
         <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
