@@ -22,11 +22,28 @@ namespace LAS.DAL
     /// </summary>
     public class AssistantHandler : IHandler
     {
-        private static DataClassesDataContext db = new DataClassesDataContext();
+        private static DataClassesDataContext db = new DataClassesDataContext("Data Source=FIREFLY-PC;Initial Catalog=LASDB;Integrated Security=True");
         private Assistants currentAssistant;
-        public AssistantHandler(Assistants a)
+
+        public static DataClassesDataContext DB
         {
-            currentAssistant = a;
+            get
+            {
+                return db;
+            }
+        }
+
+        public Assistants CurrentAssistant
+        {
+            get
+            {
+                return currentAssistant;
+            }
+        }
+
+        public AssistantHandler(Assistants assistant)
+        {
+            currentAssistant = assistant;
         }
         //接口IHandler的实现
         public void Insert()

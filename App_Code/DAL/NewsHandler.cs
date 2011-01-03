@@ -25,12 +25,28 @@ namespace LAS.DAL
         /// <summary>
         /// 由linq生成的数据库上下文类
         /// </summary>
-        private static DataClassesDataContext dataClassesDataContext = new DataClassesDataContext();
+        private static DataClassesDataContext dataClassesDataContext = new DataClassesDataContext("Data Source=FIREFLY-PC;Initial Catalog=LASDB;Integrated Security=True");
 
         /// <summary>
         /// 当前handler对应的news对象
         /// </summary>
         private News currentNews;
+
+        public static DataClassesDataContext DataClassesDataContext
+        {
+            get
+            {
+                return dataClassesDataContext;
+            }
+        }
+
+        public News CurrentNews
+        {
+            get
+            {
+                return currentNews;
+            }
+        }
 
         /// <summary>
         /// 基于一个News对象的构造函数

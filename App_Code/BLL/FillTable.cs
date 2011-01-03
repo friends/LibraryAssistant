@@ -3,7 +3,7 @@
 //   Copyright (C) 2010  yang haichuan
 //   作者： 杨海川 
 //   Email: yanghaichuan@live.cn
-//   最后修改时间： 2010 - 12 - 11
+//   最后修改时间： 2010 - 12 - 29
 //   检查者: 陈兵
 //   最后检查时间: 2010 - 12 -11
 //   =================================
@@ -28,6 +28,43 @@ public enum NoValueDisplay
 /// </summary>
 public class FillTable
 {
+    private List<string>[][] dataArray;
+    private int rowNum;
+    private int colNum;
+    private NoValueDisplay noValueSign;
+
+    public int RowNum
+    {
+        get 
+        {
+            return rowNum;
+        }
+    }
+
+    public int ColNum
+    {
+        get
+        {
+            return colNum;
+        }
+    }
+
+    public List<string>[][] DataArray
+    {
+        get
+        {
+            return dataArray;
+        }
+    }
+
+    public NoValueDisplay NoValueSign
+    {
+        get
+        {
+            return noValueSign;
+        }
+    }
+
     public FillTable(int rowNum, int colNum)
     {
         this.rowNum = rowNum;
@@ -35,7 +72,7 @@ public class FillTable
         initArray(rowNum, colNum);
     }
 
-    protected void initArray(int rowNum, int colNum)
+    private void initArray(int rowNum, int colNum)
     {
         dataArray = new List<string>[rowNum][];
         for (int i = 0; i < rowNum; i++)
@@ -44,24 +81,21 @@ public class FillTable
             for (int j = 0; j < colNum; j++)
                 dataArray[i][j] = new List<string>();
     }
-    protected List<string>[][] dataArray;
-    protected int rowNum;
-    protected int colNum;
-    private NoValueDisplay noValueSign;
+
 
     public void creatDataArray(List<Duty> dutys)
     {
-        foreach (Duty d in dutys)
+        foreach (Duty duty in dutys)
         {
-            putInDataArray(d);
+            putInDataArray(duty);
         }
     }
 
-    protected void putInDataArray(Duty d)
+    private void putInDataArray(Duty duty)
     {
-        int row = d.time;
-        int col = d.day-1;
-        dataArray[row][col].Add(d.Assistants.name);
+        int row = duty.time;
+        int col = duty.day-1;
+        dataArray[row][col].Add(duty.Assistants.name);
     }
 
     public void fillDataArrayToTable(Table t,NoValueDisplay sign)
@@ -69,25 +103,25 @@ public class FillTable
         noValueSign = sign;
         for (int row = 0; row < rowNum; row++)
         {
-            TableRow r = new TableRow();
-            r.Cells.Add(getTab(row));
+            TableRow newTableRow = new TableRow();
+            newTableRow.Cells.Add(getTab(row));
             for (int col = 0; col < colNum; col++)
             {
-                r.Cells.Add(getCell(row, col));
+                newTableRow.Cells.Add(getCell(row, col));
             }
-            t.Rows.Add(r);
+            t.Rows.Add(newTableRow);
         }
 
     }
 
-    protected TableCell getTab(int row)
+    private TableCell getTab(int row)
     {
         TableCell tab = new TableCell();
         tab.Text = "时间" + row;
         return tab;
     }
 
-    protected string getTitle(List<string> strList)
+    private string getTitle(List<string> strList)
     {
         if (strList.Count == 0)
             return getNoValueShow();
@@ -106,7 +140,7 @@ public class FillTable
         else
             return "";
     }
-    protected string getAll(List<string> strList)
+    private string getWholeStringFromStringList(List<string> strList)
     {
         if (strList.Count <= 1)
             return null;
@@ -123,7 +157,7 @@ public class FillTable
         }
     }
 
-    protected TableCell getCell(int row, int col)
+    private TableCell getCell(int row, int col)
     {
         TableCell c = new TableCell();
         fillCell(row, col, c);
@@ -146,7 +180,7 @@ public class FillTable
     {
         HtmlAnchor a = new HtmlAnchor();
         a.InnerText = getTitle(dataArray[row][col]);
-        a.Attributes.Add("onclick", "alert('" + getAll(dataArray[row][col]) + "')");
+        a.Attributes.Add("onclick", "alert('" + getWholeStringFromStringList(dataArray[row][col]) + "')");
         c.Controls.Add(a);
     }
 
