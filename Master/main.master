@@ -22,12 +22,18 @@
     <form id="form1" runat="server">
     <div id="wrapper">       
         <div id="header"> 
-        <h1>图书馆助理管理系统</h1>
-            <div><strong id="user" runat="server"></strong><asp:HyperLink ID="home" runat="server" Target="_blank" NavigateUrl="~/Default.aspx">主页</asp:HyperLink> | <asp:HyperLink ID="apply" runat="server" Target="_blank" NavigateUrl="~/assistant/Apply.aspx">申请</asp:HyperLink><label id="spliter" runat="server"> | </label> <asp:HyperLink  ID = "login" Target="_blank" NavigateUrl="~/Login.aspx" runat="server">登录</asp:HyperLink></div>
+        <h1><asp:Label ID="label" runat="server" meta:resourcekey="labelResource1">图书馆助理管理系统</asp:Label> </h1>
+            <div><strong id="user" runat="server"></strong><asp:HyperLink ID="home" 
+                    runat="server" Target="_blank" NavigateUrl="~/Default.aspx" 
+                    meta:resourcekey="homeResource1">主页</asp:HyperLink> | 
+                <asp:HyperLink ID="apply" runat="server" Target="_blank" 
+                    NavigateUrl="~/assistant/Apply.aspx" meta:resourcekey="applyResource1">申请</asp:HyperLink><label id="spliter" runat="server"> | </label> 
+                <asp:HyperLink  ID = "login" Target="_blank" NavigateUrl="~/Login.aspx" 
+                    runat="server" meta:resourcekey="loginResource1">登录</asp:HyperLink></div>
         </div>
         <div>
         <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" 
-            Font-Size="0.8em" PathSeparator=" : ">
+            Font-Size="0.8em" PathSeparator=" : " meta:resourcekey="SiteMapPath1Resource1">
             <CurrentNodeStyle ForeColor="#333333" />
             <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
             <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />

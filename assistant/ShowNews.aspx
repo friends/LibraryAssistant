@@ -9,14 +9,14 @@
 //   最后检查时间: 2010 - 12 -11
 //   =================================
 --%>
-<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="ShowNews.aspx.cs" Inherits="assistant_ShowNews" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Master/main.master" AutoEventWireup="true" CodeFile="ShowNews.aspx.cs" Inherits="assistant_ShowNews" meta:resourcekey="PageResource1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
-<div>
+    <div>
     <h2 id="newsTitle" runat="server"></h2>
-    发布时间：<span id="time" runat="server"></span>
+    <asp:Label runat="server" ID="label" meta:resourcekey="labelResource1" >发布时间:</asp:Label><span id="time" runat="server"></span>
 <p id="content" runat="server"></p>
 </div>
     </asp:Content>

@@ -23,20 +23,30 @@
 <body>
     <form id="form1" runat="server">
     <div id="wrapper">
-    <h1>图书馆助理管理系统</h1>
+    <h1><asp:Label runat="server" ID="label1" meta:resourcekey="label1Resource1">图书馆助理管理系统</asp:Label></h1>
         <div id="header"> 
-            <div>欢迎 <strong>admin</strong> (admin)  | <a href="../">返回首页</a> | <a href="../Logout.aspx">退出</a> </div>
-            <h2><a href="../Default.aspx" style="color:#000;font-family: 'Microsoft Yahei';  font-size:24px;  ">管理中心</a></h2>
+            <div>Welcome <strong>admin</strong> (admin)  | <asp:HyperLink runat="server" ID="home" 
+                    href="../" meta:resourcekey="homeResource1">返回首页</asp:HyperLink> | 
+                <asp:HyperLink runat="server" ID="link" href="../Logout.aspx" 
+                    meta:resourcekey="linkResource1">退出</asp:HyperLink> </div>
+            <h2><asp:HyperLink runat="server" ID="default" href="../Default.aspx" 
+                    style="color:#000;font-family: 'Microsoft Yahei';  font-size:24px;  " 
+                    meta:resourcekey="defaultResource1">管理中心</asp:HyperLink></h2>
         </div>
         <div id="container"> 
             <div id="sidebar">
-                <h4>内容管理</h4>
+                <h4><asp:Label runat="server" ID="label" meta:resourcekey="labelResource1">内容管理</asp:Label></h4>
                 <ul>
-                    <li><a href="../administor/NewsEdit.aspx">添加新闻</a></li>
-                    <li><a href="../administor/NewsManage.aspx">新闻管理</a></li>
-                    <li><a href="../administor/UserManage.aspx">助理管理</a></li>
-                    <li><a href="../administor/InsertWork.aspx">添加排班</a></li>
-                    <li><a href="../administor/WorkArrange.aspx">助理排班</a></li>
+                    <li><asp:HyperLink runat="server" ID="link1" href="../administor/NewsEdit.aspx" 
+                            meta:resourcekey="link1Resource1">添加新闻</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="link2"  href="../administor/NewsManage.aspx" 
+                            meta:resourcekey="link2Resource1">新闻管理</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="link3"  href="../administor/UserManage.aspx" 
+                            meta:resourcekey="link3Resource1">助理管理</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="link4"  href="../administor/InsertWork.aspx" 
+                            meta:resourcekey="link4Resource1">添加排班</asp:HyperLink></li>
+                    <li><asp:HyperLink runat="server" ID="link5"  href="../administor/WorkArrange.aspx" 
+                            meta:resourcekey="link5Resource1">助理排班</asp:HyperLink></li>
                 </ul>
             </div>
             
