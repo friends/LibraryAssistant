@@ -1,0 +1,17 @@
+1. 单元测试
+	1.1 文档位置：
+	1.2代码位置：
+
+2. 系统/集成测试
+2.1 可用性测试
+	2.1.1 文档位置：~test_docs/UsabilityTesting.pdf
+	2.1.2 代码位置：没有代码；
+2.2 本地化/国际化测试
+	2.2.1 文档位置：~test_docs/LocalizationInternationalizationTesting.pdf
+	2.2.2 代码位置：~/App_LocalResources、~/assistant/App_LocalResources、~/administor/App_LocalResources、~/Master/App_LocalResources这几个文件夹里的所有文件都是对应不同语种的资源文件；而本项目中所有的aspx文件也作了相关修改；
+2.3 UI/功能测试
+	2.3.1 文档位置：
+	2.3.2 代码位置：
+
+3. Bug 追踪
+	3.1 文档位置：
