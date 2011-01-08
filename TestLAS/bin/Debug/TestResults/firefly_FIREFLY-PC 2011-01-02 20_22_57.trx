@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4bea1bc4-a930-4d0b-9c94-8903d6abfcfe" name="firefly@FIREFLY-PC 2011-01-02 20:22:57" runUser="firefly-PC\firefly" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="默认测试设置" id="af785321-5c5e-4c86-a623-3b043c9c2150">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="firefly_FIREFLY-PC 2011-01-02 20_22_57" />
+  </TestSettings>
+  <Times creation="2011-01-02T20:22:57.3986281+08:00" queuing="2011-01-02T20:22:57.8176521+08:00" start="2011-01-02T20:22:57.9926621+08:00" finish="2011-01-02T20:23:12.3754847+08:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="15" executed="15" error="0" failed="0" timeout="0" aborted="0" inconclusive="15" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NewsHandlerConstructorTest" storage="testlas.dll" id="2c04d381-4c31-0f60-6c89-d2f5046e449d">
+      <Execution id="a249e72c-684b-4b4c-b00d-aae3d721e6ea" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NewsHandlerConstructorTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getNewsByIdTest" storage="testlas.dll" id="fcda9171-1cbf-d6d3-8ac9-c63abf747ce2">
+      <Execution id="d09778ad-8bcf-4a38-a43e-fa2c41ed1f85" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNewsByIdTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getAssistantsListTest" storage="testlas.dll" id="a809c5f6-8e9c-072d-7cb8-7d6ff80092e7">
+      <Execution id="de61ebf1-afb7-4861-99c4-ed03d1cc4116" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAssistantsListTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="testlas.dll" id="7af80c49-9605-a7c2-162e-8059aafeaa05">
+      <Execution id="ce521c8f-471f-4478-822d-e91b9300265c" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="InsertTest" storage="testlas.dll" id="e7c60e52-7f24-f83c-962f-f0973c4a49a3">
+      <Execution id="911bf996-6055-4414-8ac4-ef3f224af169" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getNewsListTest" storage="testlas.dll" id="269aa5f5-1ae9-1c4b-2cb1-bd8d2434161f">
+      <Execution id="cd7f69be-1836-42f8-81d3-7d599e88dfdb" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNewsListTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="FillTableConstructorTest" storage="testlas.dll" id="79d90a58-2e89-ea25-3908-302ddbeae703">
+      <Execution id="dfb7be16-7743-43a2-b64b-83584b1de654" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.FillTableTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FillTableConstructorTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="InsertTest" storage="testlas.dll" id="15506f8e-84d8-5cce-a8d2-cf532b41e440">
+      <Execution id="899d9105-47f9-4fa7-b190-cb94db4651cd" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AssistantHandlerConstructorTest" storage="testlas.dll" id="d52d3dcb-1ed9-b1bf-ea3f-ad0b2fea51c4">
+      <Execution id="0b48b26b-4288-44c9-b6e4-a3ba096af999" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AssistantHandlerConstructorTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="SubmitTest" storage="testlas.dll" id="6286a8e1-eaee-b8f6-75ed-584ecb3654e0">
+      <Execution id="8f18f6c5-56ca-400d-8aa1-cf9fca53d038" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.NewsHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubmitTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="creatDataArrayTest" storage="testlas.dll" id="93e25f02-836d-15bb-910d-f8c4e77f9eec">
+      <Execution id="af2bef54-7d1d-443b-917d-dd344f40b08a" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.FillTableTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="creatDataArrayTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="testlas.dll" id="13e4f637-e656-f4e8-487e-8cf352d8ad1a">
+      <Execution id="8ace4009-d6b0-4f78-b68a-aa81595d55b1" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="fillDataArrayToTableTest" storage="testlas.dll" id="4f0711ef-64d6-caa2-cd3e-693b228d60d1">
+      <Execution id="ba9dc718-1d3d-47a5-bea9-168b0237d047" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.FillTableTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="fillDataArrayToTableTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getAssistantByIdTest" storage="testlas.dll" id="b4aad4a0-63e4-5420-ac46-62f7acb4ff87">
+      <Execution id="9e5a3c8a-a9fc-4fe8-9ca5-29b1d46f37f3" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getAssistantByIdTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="SubmitTest" storage="testlas.dll" id="e95e8f12-015f-9b21-dbf7-4109c368e0ed">
+      <Execution id="222668a1-f04b-40e9-b656-a5f8c5f0b326" />
+      <TestMethod codeBase="C:/Users/firefly/repos/TestLAS/bin/Debug/TestLAS.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLAS.AssistantHandlerTest, TestLAS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SubmitTest" />
+      <AspNet webSiteUrl="http://localhost/LAS">
+        <Host pathToWebApp="C:\Users\firefly\repos\LAS" webAppRoot="/LAS" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d52d3dcb-1ed9-b1bf-ea3f-ad0b2fea51c4" executionId="0b48b26b-4288-44c9-b6e4-a3ba096af999" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13e4f637-e656-f4e8-487e-8cf352d8ad1a" executionId="8ace4009-d6b0-4f78-b68a-aa81595d55b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4aad4a0-63e4-5420-ac46-62f7acb4ff87" executionId="9e5a3c8a-a9fc-4fe8-9ca5-29b1d46f37f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a809c5f6-8e9c-072d-7cb8-7d6ff80092e7" executionId="de61ebf1-afb7-4861-99c4-ed03d1cc4116" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15506f8e-84d8-5cce-a8d2-cf532b41e440" executionId="899d9105-47f9-4fa7-b190-cb94db4651cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e95e8f12-015f-9b21-dbf7-4109c368e0ed" executionId="222668a1-f04b-40e9-b656-a5f8c5f0b326" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93e25f02-836d-15bb-910d-f8c4e77f9eec" executionId="af2bef54-7d1d-443b-917d-dd344f40b08a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f0711ef-64d6-caa2-cd3e-693b228d60d1" executionId="ba9dc718-1d3d-47a5-bea9-168b0237d047" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="79d90a58-2e89-ea25-3908-302ddbeae703" executionId="dfb7be16-7743-43a2-b64b-83584b1de654" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7af80c49-9605-a7c2-162e-8059aafeaa05" executionId="ce521c8f-471f-4478-822d-e91b9300265c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcda9171-1cbf-d6d3-8ac9-c63abf747ce2" executionId="d09778ad-8bcf-4a38-a43e-fa2c41ed1f85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="269aa5f5-1ae9-1c4b-2cb1-bd8d2434161f" executionId="cd7f69be-1836-42f8-81d3-7d599e88dfdb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7c60e52-7f24-f83c-962f-f0973c4a49a3" executionId="911bf996-6055-4414-8ac4-ef3f224af169" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c04d381-4c31-0f60-6c89-d2f5046e449d" executionId="a249e72c-684b-4b4c-b00d-aae3d721e6ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6286a8e1-eaee-b8f6-75ed-584ecb3654e0" executionId="8f18f6c5-56ca-400d-8aa1-cf9fca53d038" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0b48b26b-4288-44c9-b6e4-a3ba096af999" testId="d52d3dcb-1ed9-b1bf-ea3f-ad0b2fea51c4" testName="AssistantHandlerConstructorTest" computerName="FIREFLY-PC" duration="00:00:00.0178642" startTime="2011-01-02T20:22:58.3036799+08:00" endTime="2011-01-02T20:23:08.6102694+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b48b26b-4288-44c9-b6e4-a3ba096af999">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。未找到 .ctor 的专用访问器。请重新生成包含项目或者手动运行 Publicize.exe。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.AssistantHandlerConstructorTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 173
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8ace4009-d6b0-4f78-b68a-aa81595d55b1" testId="13e4f637-e656-f4e8-487e-8cf352d8ad1a" testName="DeleteTest" computerName="FIREFLY-PC" duration="00:00:00.0010864" startTime="2011-01-02T20:23:08.6132695+08:00" endTime="2011-01-02T20:23:08.7072749+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ace4009-d6b0-4f78-b68a-aa81595d55b1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.DeleteTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 157
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9e5a3c8a-a9fc-4fe8-9ca5-29b1d46f37f3" testId="b4aad4a0-63e4-5420-ac46-62f7acb4ff87" testName="getAssistantByIdTest" computerName="FIREFLY-PC" duration="00:00:00.0045519" startTime="2011-01-02T20:23:09.1943028+08:00" endTime="2011-01-02T20:23:09.3053091+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e5a3c8a-a9fc-4fe8-9ca5-29b1d46f37f3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.getAssistantByIdTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="de61ebf1-afb7-4861-99c4-ed03d1cc4116" testId="a809c5f6-8e9c-072d-7cb8-7d6ff80092e7" testName="getAssistantsListTest" computerName="FIREFLY-PC" duration="00:00:00.0008278" startTime="2011-01-02T20:23:09.3123095+08:00" endTime="2011-01-02T20:23:09.4113152+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de61ebf1-afb7-4861-99c4-ed03d1cc4116">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.getAssistantsListTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="899d9105-47f9-4fa7-b190-cb94db4651cd" testId="15506f8e-84d8-5cce-a8d2-cf532b41e440" testName="InsertTest" computerName="FIREFLY-PC" duration="00:00:00.0008147" startTime="2011-01-02T20:23:09.4143154+08:00" endTime="2011-01-02T20:23:09.5123210+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="899d9105-47f9-4fa7-b190-cb94db4651cd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.InsertTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 140
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="222668a1-f04b-40e9-b656-a5f8c5f0b326" testId="e95e8f12-015f-9b21-dbf7-4109c368e0ed" testName="SubmitTest" computerName="FIREFLY-PC" duration="00:00:00.0008206" startTime="2011-01-02T20:23:09.5173212+08:00" endTime="2011-01-02T20:23:09.6103266+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="222668a1-f04b-40e9-b656-a5f8c5f0b326">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.AssistantHandlerTest.SubmitTest() 位置 C:\Users\firefly\repos\TestLAS\AssistantHandlerTest.cs:行号 122
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="af2bef54-7d1d-443b-917d-dd344f40b08a" testId="93e25f02-836d-15bb-910d-f8c4e77f9eec" testName="creatDataArrayTest" computerName="FIREFLY-PC" duration="00:00:00.0011693" startTime="2011-01-02T20:23:09.6143268+08:00" endTime="2011-01-02T20:23:09.7473344+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af2bef54-7d1d-443b-917d-dd344f40b08a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。未找到 creatDataArray 的专用访问器。请重新生成包含项目或者手动运行 Publicize.exe。</Message>
+          <StackTrace>   在 TestLAS.FillTableTest.creatDataArrayTest() 位置 C:\Users\firefly\repos\TestLAS\FillTableTest.cs:行号 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ba9dc718-1d3d-47a5-bea9-168b0237d047" testId="4f0711ef-64d6-caa2-cd3e-693b228d60d1" testName="fillDataArrayToTableTest" computerName="FIREFLY-PC" duration="00:00:00.0010724" startTime="2011-01-02T20:23:09.7523347+08:00" endTime="2011-01-02T20:23:09.8563406+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba9dc718-1d3d-47a5-bea9-168b0237d047">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。未找到 fillDataArrayToTable 的专用访问器。请重新生成包含项目或者手动运行 Publicize.exe。</Message>
+          <StackTrace>   在 TestLAS.FillTableTest.fillDataArrayToTableTest() 位置 C:\Users\firefly\repos\TestLAS\FillTableTest.cs:行号 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dfb7be16-7743-43a2-b64b-83584b1de654" testId="79d90a58-2e89-ea25-3908-302ddbeae703" testName="FillTableConstructorTest" computerName="FIREFLY-PC" duration="00:00:00.0008613" startTime="2011-01-02T20:23:09.8613409+08:00" endTime="2011-01-02T20:23:09.9523461+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfb7be16-7743-43a2-b64b-83584b1de654">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestLAS.FillTableTest.FillTableConstructorTest() 位置 C:\Users\firefly\repos\TestLAS\FillTableTest.cs:行号 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce521c8f-471f-4478-822d-e91b9300265c" testId="7af80c49-9605-a7c2-162e-8059aafeaa05" testName="DeleteTest" computerName="FIREFLY-PC" duration="00:00:00.0010905" startTime="2011-01-02T20:23:09.9563464+08:00" endTime="2011-01-02T20:23:10.0493517+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce521c8f-471f-4478-822d-e91b9300265c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.DeleteTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 117
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d09778ad-8bcf-4a38-a43e-fa2c41ed1f85" testId="fcda9171-1cbf-d6d3-8ac9-c63abf747ce2" testName="getNewsByIdTest" computerName="FIREFLY-PC" duration="00:00:00.0008274" startTime="2011-01-02T20:23:10.0533519+08:00" endTime="2011-01-02T20:23:10.1473573+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d09778ad-8bcf-4a38-a43e-fa2c41ed1f85">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.getNewsByIdTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 151
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd7f69be-1836-42f8-81d3-7d599e88dfdb" testId="269aa5f5-1ae9-1c4b-2cb1-bd8d2434161f" testName="getNewsListTest" computerName="FIREFLY-PC" duration="00:00:00.0010045" startTime="2011-01-02T20:23:10.1533576+08:00" endTime="2011-01-02T20:23:10.2633639+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd7f69be-1836-42f8-81d3-7d599e88dfdb">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.getNewsListTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="911bf996-6055-4414-8ac4-ef3f224af169" testId="e7c60e52-7f24-f83c-962f-f0973c4a49a3" testName="InsertTest" computerName="FIREFLY-PC" duration="00:00:00.0011127" startTime="2011-01-02T20:23:10.2683642+08:00" endTime="2011-01-02T20:23:10.3633696+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="911bf996-6055-4414-8ac4-ef3f224af169">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.InsertTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a249e72c-684b-4b4c-b00d-aae3d721e6ea" testId="2c04d381-4c31-0f60-6c89-d2f5046e449d" testName="NewsHandlerConstructorTest" computerName="FIREFLY-PC" duration="00:00:00.0009338" startTime="2011-01-02T20:23:10.3673699+08:00" endTime="2011-01-02T20:23:10.4643754+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a249e72c-684b-4b4c-b00d-aae3d721e6ea">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。未找到 .ctor 的专用访问器。请重新生成包含项目或者手动运行 Publicize.exe。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.NewsHandlerConstructorTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 133
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8f18f6c5-56ca-400d-8aa1-cf9fca53d038" testId="6286a8e1-eaee-b8f6-75ed-584ecb3654e0" testName="SubmitTest" computerName="FIREFLY-PC" duration="00:00:00.0007884" startTime="2011-01-02T20:23:10.4713758+08:00" endTime="2011-01-02T20:23:10.5643811+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f18f6c5-56ca-400d-8aa1-cf9fca53d038">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestLAS.NewsHandlerTest.SubmitTest() 位置 C:\Users\firefly\repos\TestLAS\NewsHandlerTest.cs:行号 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

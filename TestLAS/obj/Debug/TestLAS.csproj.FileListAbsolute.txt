@@ -1,0 +1,9 @@
+C:\Users\firefly\repos\TestLAS\bin\Debug\TestLAS.dll
+C:\Users\firefly\repos\TestLAS\bin\Debug\TestLAS.pdb
+C:\Users\firefly\repos\TestLAS\bin\Debug\App_Code.dll
+C:\Users\firefly\repos\TestLAS\bin\Debug\nunit.framework.dll
+C:\Users\firefly\repos\TestLAS\bin\Debug\App_Code.pdb
+C:\Users\firefly\repos\TestLAS\bin\Debug\nunit.framework.xml
+C:\Users\firefly\repos\TestLAS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\firefly\repos\TestLAS\obj\Debug\TestLAS.dll
+C:\Users\firefly\repos\TestLAS\obj\Debug\TestLAS.pdb

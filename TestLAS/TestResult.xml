@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\FIREFLY\repos\TestLAS\bin\Debug\TestLAS.dll" total="15" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-01-08" time="19:08:55">
+  <environment nunit-version="2.5.9.10348" clr-version="2.0.50727.4952" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Users\FIREFLY\repos\TestLAS" machine-name="FIREFLY-PC" user="FIREFLY" user-domain="FIREFLY-PC" />
+  <culture-info current-culture="zh-CN" current-uiculture="zh-CN" />
+  <test-suite type="Assembly" name="C:\Users\FIREFLY\repos\TestLAS\bin\Debug\TestLAS.dll" executed="True" result="Success" success="True" time="1.549" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="TestLAS" executed="True" result="Success" success="True" time="1.543" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="AssistantHandlerTest" executed="True" result="Success" success="True" time="1.280" asserts="0">
+            <results>
+              <test-case name="TestLAS.AssistantHandlerTest.AssistantHandlerConstructorTest" executed="True" result="Success" success="True" time="0.290" asserts="1" />
+              <test-case name="TestLAS.AssistantHandlerTest.DeleteTest" executed="True" result="Success" success="True" time="0.856" asserts="1" />
+              <test-case name="TestLAS.AssistantHandlerTest.getAssistantByIdTest" executed="True" result="Success" success="True" time="0.081" asserts="1" />
+              <test-case name="TestLAS.AssistantHandlerTest.getAssistantsListTest" executed="True" result="Success" success="True" time="0.034" asserts="1" />
+              <test-case name="TestLAS.AssistantHandlerTest.InsertTest" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="TestLAS.AssistantHandlerTest.SubmitTest" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="FillTableTest" executed="True" result="Success" success="True" time="0.142" asserts="0">
+            <results>
+              <test-case name="TestLAS.FillTableTest.creatDataArrayTest" executed="True" result="Success" success="True" time="0.063" asserts="24" />
+              <test-case name="TestLAS.FillTableTest.fillDataArrayToTableTest" executed="True" result="Success" success="True" time="0.076" asserts="1" />
+              <test-case name="TestLAS.FillTableTest.FillTableConstructorTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="NewsHandlerTest" executed="True" result="Success" success="True" time="0.114" asserts="0">
+            <results>
+              <test-case name="TestLAS.NewsHandlerTest.DeleteTest" executed="True" result="Success" success="True" time="0.083" asserts="1" />
+              <test-case name="TestLAS.NewsHandlerTest.getNewsByIdTest" executed="True" result="Success" success="True" time="0.012" asserts="1" />
+              <test-case name="TestLAS.NewsHandlerTest.getNewsListTest" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="TestLAS.NewsHandlerTest.InsertTest" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+              <test-case name="TestLAS.NewsHandlerTest.NewsHandlerConstructorTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="TestLAS.NewsHandlerTest.SubmitTest" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
