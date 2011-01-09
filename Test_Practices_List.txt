@@ -16,8 +16,9 @@
 	2.2.1 文档位置：~test_docs/LocalizationInternationalizationTesting.pdf
 	2.2.2 代码位置：~/App_LocalResources、~/assistant/App_LocalResources、~/administor/App_LocalResources、~/Master/App_LocalResources这几个文件夹里的所有文件都是对应不同语种的资源文件；而本项目中所有的aspx文件也作了相关修改；
 2.3 UI/功能测试
-	2.3.1 文档位置：
-	2.3.2 代码位置：
+	2.3.1 文档位置：~test_docs/FunctionUITesting.pdf
+	2.3.2 代码位置：~test_docs/AllpagesChecking、MainpageChecking、ManagerpageChecking、PagesLinking、PersonalpageChecking
+                        该代码是HTML文件，所以没有放在项目当中。  
 
 3. Bug 追踪
-	3.1 文档位置：
+	3.1 文档位置：~test_docs/bugtracker.pdf

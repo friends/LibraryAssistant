@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:18970/" />
+<title>AllpagesChecking</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AllpagesChecking</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/LibraryAssistant/Default.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxID</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxPwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxRePwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxName</td>
+	<td>陈兵1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>content_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxID</td>
+	<td>222</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxPwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxRePwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>content_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxID</td>
+	<td>333</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxPwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxRePwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxName</td>
+	<td>陈兵3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>content_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=«返回首页</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=新闻管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=助理管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=添加排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=助理排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=返回首页</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>apply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxID</td>
+	<td>mm</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxPwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxRePwd</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>content_TextBoxName</td>
+	<td>小静</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>content_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList1_HyperLink1_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList1_HyperLink1_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList1_HyperLink1_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList1_HyperLink1_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList2_HyperLink1_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList2_HyperLink1_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ContentPlaceHolder1_txtTitle</td>
+	<td>谢晓境回来了</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ContentPlaceHolder1_typeRadioButtonList_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ContentPlaceHolder1_btnEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=添加新闻</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ContentPlaceHolder1_txtTitle</td>
+	<td>谢晓境是个优秀助理</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ContentPlaceHolder1_typeRadioButtonList_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ContentPlaceHolder1_btnEdit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=助理管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/div[1]/table/tbody/tr[3]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>确定要删除吗?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=添加排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ContentPlaceHolder1_DropDownListTime</td>
+	<td>label=7</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ContentPlaceHolder1_DropDownListTime</td>
+	<td>label=4</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ContentPlaceHolder1_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=删除</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=助理排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=添加排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=添加排班</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>ContentPlaceHolder1_DropDownListTime</td>
+	<td>label=7</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ContentPlaceHolder1_ButtonOK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=返回首页</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>content_DataList2_HyperLink1_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=新闻管理</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/div[1]/table/tbody/tr[8]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>确定要删除吗?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/div[1]/table/tbody/tr[8]/td[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>确定要删除吗?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=返回首页</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtUserName</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>txtPassword</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=«返回首页</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
